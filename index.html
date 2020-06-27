@@ -20,8 +20,13 @@
       <button v-for="value in values" @click.prevent="printNumber(value)">
         {{value}}
       </button>
-      <button v-for="operator in operators">{{operator}}</button>
-      <button>=</button>
+      <button
+        v-for="operator in operators"
+        @click.prevent="setOperator(operator)"
+      >
+        {{operator}}
+      </button>
+      <button @click.prevent="calculate">=</button>
       <span></span>
     </div>
     <script src="./app.js"></script>
