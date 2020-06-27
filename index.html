@@ -12,11 +12,14 @@
       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
       crossorigin="anonymous"
     />
-    <script src="./app.js"></script>
 
     <title>Vue Calculator</title>
   </head>
   <body>
-    <div id="calculator"></div>
+    <div id="calculator">
+      <button v-for="value in values">{{value}}</button>
+      <button v-for="operator in operators">{{operator}}</button>
+    </div>
+    <script src="./app.js"></script>
   </body>
 </html>
