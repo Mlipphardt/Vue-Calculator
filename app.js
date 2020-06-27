@@ -26,5 +26,9 @@ var calculator = new Vue({
           console.log("ERR");
       }
     },
+    printNumber: function (number) {
+      console.log("Printing a number!");
+      console.log(number);
+    },
   },
 });

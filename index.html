@@ -17,8 +17,12 @@
   </head>
   <body>
     <div id="calculator">
-      <button v-for="value in values">{{value}}</button>
+      <button v-for="value in values" @click.prevent="printNumber(value)">
+        {{value}}
+      </button>
       <button v-for="operator in operators">{{operator}}</button>
+      <button>=</button>
+      <span></span>
     </div>
     <script src="./app.js"></script>
   </body>
